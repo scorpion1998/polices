@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1621787922768",
+            "Action": [
+                "s3:CreateBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::mynewbucketsss"
+        },
+        {
+            "Sid": "Stmt1621788075564",
+            "Action": [
+                "s3:DeleteBucketPolicy"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::mynewbucketsss"
+        },
+        {
+            "Sid": "Stmt1621788269436",
+            "Action": [
+                "s3:GetBucketAcl"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::mynewbucketsss"
+        }
+    ]
+}
